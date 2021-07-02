@@ -1,0 +1,159 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../clear.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu {
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 35px;
+    font-weight: 150px;
+    letter-spacing: 2px;
+}
+
+section h1 {
+    margin: 20px 0 20px 0;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone {
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover {
+    background: #00b894;
+    color: white;
+}
+
+section .btntwo {
+    background: #00b894;
+    color: white;
+}
+
+.btntwo:hover {
+    background: #fff;
+    color: #000;
+}
+
+.change_content:after {
+    content: '';
+    animation: changetext 20s infinite linear;
+    color: red;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Darjeeling";
+    }
+    10% {
+        content: "Kolkata";
+    }
+    20% {
+        content: "Delhi";
+    }
+    30% {
+        content: "Mumbai";
+    }
+    40% {
+        content: "Kerela";
+    }
+    50% {
+        content: "Goa";
+    }
+    55% {
+        content: "Gaya";
+    }
+    60% {
+        content: "Bhutan";
+    }
+    65% {
+        content: "Bangalore";
+    }
+    70% {
+        content: "Hyderabad";
+    }
+    75% {
+        content: "Patna";
+    }
+    80% {
+        conten: "Chennai";
+    }
+    85% {
+        content: "Pune";
+    }
+    90% {
+        content: "Jaipur";
+    }
+    100% {
+        content: "Kanpur";
+    }
+}
